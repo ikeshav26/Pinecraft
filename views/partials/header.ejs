@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/images/pc.logo.png" type="image/png">
+</head>
+<body>
+    <% if(nav===true){ %>
+    <div class="w-full fixed z-20  px-10 py-5 flex justify-between items-center bg-zinc-800 text-zinc-100 border-b-2 border-zinc-600 ">
+        <div class="flex items-center justify-center gap-3">
+            <img src="/images/pc.logo.png" class="rounded-full w-14 h-14 ">
+            <h3 class="text-3xl font-semibold">Pinecraft</h3>
+        </div>
+        <div class="flex gap-10 justify-center items-center">
+            <a class="px-3 py-1   text-md font-semibold  rounded-2xl  " href="/profile">Profile</a>
+            <a class="px-3 py-1   text-md font-semibold  rounded-2xl  " href="/feed">Feed</a>
+            <a class="px-3 py-1  bg-red-900 text-md font-semibold rounded-2xl  " href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <% } %>
