@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs' )%>
+<div class="w-full min-h-screen bg-[url('https://images.unsplash.com/photo-1565373987291-4d7424dd9e59?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTE1MTc1Njh8fGVufDB8fHx8fA%3D%3D')] px-10 py-5 text-zinc-900 flex flex-col justify-center items-center bg-opacity-5 ">
+    <div class="w-[450px]  text-center backdrop-blur-xl rounded-lg px-5 py-4">
+    <h1 class="text-4xl text-zinc-100 bg-gradient-to-r from-zinc-200  via-zinc-500 to-zinc-900  mb-3 px-6 py-5 rounded-tl-2xl rounded-br-2xl">Create a new post</h1>
+    <form action="/createpost" method="post" enctype="multipart/form-data" class="flex flex-col items-center justify-center">
+        <input  class="block w-full px-3 py-2  rounded-md border-2 border-zinc-900 mt-2"  type="file" name="postimage">
+        <input  class="block w-full px-3 py-2 rounded-md border-2 mt-2" type="text" name="title" placeholder="Title">
+        <textarea class="block w-full px-3 py-2 rounded-md border-2 h-60 mt-2" name="description" placeholder="description"></textarea>
+        <input class="block w-full cursor-pointer text-zinc-100  px-3 py-2 rounded-md bg-zinc-900 mt-2 capitalize font-semibold text-lg" value="create post"  type="submit">
+    </form>
+    </div>
+</div>
+<%- include('./partials/footer.ejs') %>
