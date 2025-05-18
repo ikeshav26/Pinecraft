@@ -34,7 +34,7 @@ router.get('/login',(req,res)=>{
     res.render('index',{nav:false})
 })
 
-router.get('/register',(req,res)=>{
+router.get('/',(req,res)=>{
     res.render('register',{nav:false})
 })
 
